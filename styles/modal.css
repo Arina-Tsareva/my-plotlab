@@ -1,0 +1,120 @@
+/* Затемнённый фон */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Чуть сильнее затемнение */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/* Модальное окно */
+.modal-content {
+  background: linear-gradient(145deg, #f0d4ca, #e8b8ae); /* Эффект мягкого градиента */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  border: 3px solid rgba(200, 150, 140, 0.5); /* Легкое свечение */
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Заголовок */
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5c3d35; /* Темный кофейный */
+  margin-bottom: 1rem;
+  font-family: "Georgia", serif;
+}
+
+/* Инпуты */
+.modal-input {
+  width: 100%;
+  padding: 12px 1px 12px 0px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #f7e5e0;
+  color: #5c3d35;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Центрируем текст */
+  margin-top: 0.5rem;
+}
+
+/* Кнопка */
+.modal-button {
+  background: #a6756a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-button:hover {
+  background: #8c5c53;
+  transform: translateY(-2px);
+}
+
+/* Закрывающая кнопка */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Иконка крестика */
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background: #5c3d35;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background: #8c5c53;
+  width: 26px;
+}
