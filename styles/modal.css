@@ -1,50 +1,45 @@
-/* Затемнённый фон */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Чуть сильнее затемнение */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 50;
 }
 
-/* Модальное окно */
 .modal-content {
-  background: linear-gradient(145deg, #f0d4ca, #e8b8ae); /* Эффект мягкого градиента */
+  background: linear-gradient(145deg, #f0d4ca, #e8b8ae);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 90%;
   max-width: 420px;
   text-align: center;
-  border: 3px solid rgba(200, 150, 140, 0.5); /* Легкое свечение */
+  border: 3px solid rgba(200, 150, 140, 0.5);
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Анимация появления */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Заголовок */
 .modal-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #5c3d35; /* Темный кофейный */
+  color: #5c3d35;
   margin-bottom: 1rem;
   font-family: "Georgia", serif;
 }
 
-/* Инпуты */
 .modal-input {
   width: 100%;
   padding: 12px 1px 12px 0px;
@@ -54,11 +49,10 @@
   background: #f7e5e0;
   color: #5c3d35;
   box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Центрируем текст */
+  text-align: center;
   margin-top: 0.5rem;
 }
 
-/* Кнопка */
 .modal-button {
   background: #a6756a;
   color: white;
@@ -78,7 +72,6 @@
   transform: translateY(-2px);
 }
 
-/* Закрывающая кнопка */
 .modal-close {
   position: absolute;
   top: 12px;
@@ -93,7 +86,6 @@
   cursor: pointer;
 }
 
-/* Иконка крестика */
 .modal-close::before,
 .modal-close::after {
   content: "";

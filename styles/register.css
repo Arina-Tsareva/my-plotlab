@@ -1,0 +1,95 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+  }
+  
+  .logo-text {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .register-title {
+    font-size: 32px;
+    color: #5a3e36;
+    margin-top: 20px;
+  }
+  
+  .register-description {
+    font-size: 18px;
+    color: #5a3e36;
+    max-width: 600px;
+    margin: 15px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+  }
+  
+  .register-form label {
+    font-size: 16px;
+    color: #5a3e36;
+    text-align: left;
+  }
+  
+  .register-form input, .register-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid #d3a797;
+    font-size: 16px;
+  }
+  
+  .file-input {
+    border: none;
+  }
+  
+  .password-strength {
+    height: 8px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .password-strength.weak {
+    background: red;
+  }
+  
+  .password-strength.medium {
+    background: orange;
+  }
+  
+  .password-strength.strong {
+    background: green;
+  }
+  
+  .password-hint {
+    font-size: 14px;
+    color: #5a3e36;
+    text-align: left;
+  }
+  
+  .btn-register {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-register:hover {
+    background-color: #e76f51;
+  }
+  

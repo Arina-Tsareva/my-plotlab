@@ -1,0 +1,90 @@
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Georgia", serif;
+  background: #fdfaf5;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f1e3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+  max-width: 60%;
+}
+
+.about-me h1 {
+  margin: 0;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.works-wall {
+  margin-top: 30px;
+  padding: 20px;
+  background: url("/images/pergament-bg.png") repeat;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.works-wall h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.work-card {
+  background: rgba(255, 253, 247, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.work-card h3 {
+  margin-top: 0;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.add-work-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-work-btn:hover {
+  background-color: #2980b9;
+}

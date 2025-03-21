@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "../styles/modal.css"; // Подключаем стили
+import "../styles/modal.css"; 
 
 interface LoginModalProps {
   isOpen: boolean;

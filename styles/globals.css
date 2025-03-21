@@ -1,24 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&family=Orbitron:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&family=Orbitron:wght@600&display=swap");
 
 :root {
-  --peach: #FFD3B5;
-  --coffee: #8D4F3A;
-  --milk-white: #FFF8F2;
-  --text-dark: #5A3E36;
-  --text-light: #A27C68;
+  --peach: #ffd3b5;
+  --coffee: #8d4f3a;
+  --milk-white: #fff8f2;
+  --text-dark: #5a3e36;
+  --text-light: #a27c68;
   --shadow-light: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--milk-white);
   color: var(--text-dark);
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
@@ -41,7 +43,8 @@ h3 {
   padding: 0 16px;
 }
 
-button, .btn {
+button,
+.btn {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 25px;
@@ -91,20 +94,20 @@ button, .btn {
 }
 
 .navbar-logo span {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: var(--coffee);
 }
 
 .feature-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px var(--shadow-light);
-    text-align: center;
-    margin: 1px;
-    width: 320px; /* Сделал уже */
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px var(--shadow-light);
+  text-align: center;
+  margin: 1px;
+  width: 320px;
 }
 
 .cta-section {
@@ -123,15 +126,14 @@ button, .btn {
   font-size: 1.2rem;
 }
 .grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 1024px) {
-    .grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}
